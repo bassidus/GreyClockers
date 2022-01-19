@@ -1,0 +1,168 @@
+/* ==UserStyle==
+@name           Empty @name replaces the default template - 1/19/2022, 3:00:12 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document domain("sweclockers.com") {
+    :root {
+        --dark-grey: #333;
+        --grey: #555;
+        --light-grey: #999;
+        --x-light-grey: #b0b0b0;
+        --xx-light-grey: #cecece;
+        --orange: #d26000;
+        --white: white;
+        --black: black;
+        --dark-orange: #482100;
+    }
+    .nav-top,
+    .nav-top > a {
+        background: var(--black) !important;
+    }
+    .nav-top .profile-wrapper a,
+    .nav-top .profile-wrapper a.account {
+        color: var(--x-light-grey);
+    }
+    .nav-main {
+        background: var(--black) !important;
+        border-top: 1px solid var(--dark-grey);
+        border-bottom: 1px solid var(--dark-grey);
+    }
+    .nav-main ul li a span,
+    .nav-main ul li .menu-lock span {
+        color: var(--x-light-grey);
+    }
+    body {
+        background: var(--dark-grey);
+    }
+    .card {
+        background: var(--light-grey)
+    }
+    .content-background {
+        background: var(--grey);
+    }
+    h1 {
+        color: var(--black) !important;
+    }
+    .pages > a.is-current {
+        background: var(--dark-grey);
+        border: var(--black);
+        color: var(--white);
+    }
+    .page {
+        color: var(--black);
+    }
+    .page:hover {
+        background: var(--x-light-grey) !important;
+    }
+    .pages > a {
+        fill: var(--black) !important;
+    }
+    .is-disabled {
+        fill: var(--dark-grey) !important;
+    }
+    .table > .row > .cell,
+    .table > .head > .row > .cell,
+    .table > .body > .row > .cell,
+    .table > .foot > .row > .cell {
+        background: #8e8e8e;
+        color: black;
+    }
+    .table > .body > .row:nth-child(even) > .cell {
+        background: var(--light-grey);
+    }
+    .cell {
+        border-bottom: 1px solid var(--grey) !important;
+    }
+    .link,
+    a.name {
+        color: var(--black) !important;
+    }
+    tr a:visited {
+        color: var(--grey) !important;
+    }
+    tr a {
+        /*color: #6f3300 !important*/
+        color: var(--black)!important;
+    }
+    .allPostsRead svg {
+        fill: var(--grey)!important;
+    }
+    .table .cell.status .thread-status svg {
+        fill: var(--black) !important;
+    }
+    .table .allPostsRead .cell .thread-status svg {
+        fill: var(--x-light-grey) !important;
+    }
+    .forum-post-header {
+        background: var(--dark-grey)
+    }
+    .forum-post.is-author .forum-post-header {
+        background-color: var(--black) !important;
+    }
+    .forum-post.isReader .forum-post-header,
+    .forum-post.isReader .forum-post-body {
+        border-left: 3px solid var(--orange) !important;
+    }
+    .forum-post-body,
+    .market-box {
+        background: var(--x-light-grey);
+    }
+    .forum-post-body .side {
+        background: var(--light-grey);
+        color: var(--black);
+    }
+    .forum-post .profile .meta {
+        color: var(--black);
+    }
+    .bbQuote {
+        background: var(--light-grey);
+        border: 1px solid black !important;
+    }
+    .spoilerFrame {
+        border: 1px solid black !important;
+    }
+    .bbQuote.isExpandable > .quoteFrame > .quoteFade {
+        background: linear-gradient(to bottom, rgba(215, 213, 209, 0) 0%, rgba(215, 213, 209, 0) 45%, var(--x-light-grey) 100%)
+    }
+    .bbLink,
+    .link {
+        color: black !important;
+    }
+    .color-orange {
+        color: black !important;
+        fill: black !important;
+    }
+    .content-orange,
+    .content-orange a,
+    .bg-orange {
+        background: var(--light-grey) !important;
+        color: black !important
+    }
+    .content-primary {
+        background-color: var(--x-light-grey);
+    }
+    .table > .body > .row.isSticky .cell {
+        background: var(--xx-light-grey);
+    }
+    button,
+    .button {
+        background: black !important;
+        color: white !important;
+        fill: white !important;
+        border: 1px solid gray;
+    }
+    .forum-post-body .controls .like.is-liked .icon {
+        color: white !important
+    }
+    .button.isDisabled,
+    button.isDisabled,
+    .button.is-disabled,
+    button.is-disabled,
+    .button[disabled],
+    button[disabled] {
+        background: var(--grey) !important;
+    }
+}
